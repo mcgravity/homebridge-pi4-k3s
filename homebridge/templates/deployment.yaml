@@ -63,7 +63,7 @@ spec:
               name: homebridge-hostpath
       volumes:
         - hostPath:
-            path: ./volumes/homebridge
+            path: ./mnt/homebridge
           name: homebridge-hostpath
       {{- with .Values.nodeSelector }}
       nodeSelector:
